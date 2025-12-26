@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Luego este mismo string será el de RDS
 DATABASE_URL = os.environ.get(
     "DATABASE_URL",
-    "postgresql://postgres:martinroot@flaskdbs.cijss4smk9ov.us-east-1.rds.amazonaws.com:5432/flaskdbs"
+    "postgresql://postgres:martinroot@flaskdb.cijss4smk9ov.us-east-1.rds.amazonaws.com:5432/flaskdb"
 )
 
 app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
